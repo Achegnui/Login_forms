@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  place-content: center;
+  justify-content: space-around;
+}
+.login {
+  padding: 1em;
+  border-radius: 3em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.login form {
+  padding-top: 2em;
+}
+.login form img {
+  width: 50%;
+  height: 50%;
+  border-radius: 30em;
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+.login form .field {
+  padding-top: 1.5em;
+  border: none;
+  border-bottom: 0.6px solid grey;
+  outline: none;
+  width: 22em;
+}
+.login form button {
+  width: 22em;
+  border-radius: 3em;
+  padding: 10px 0 10px 0;
+  outline: none;
+  border: none;
+  background-color: #4169e1;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.login form a {
+  text-decoration: none;
+  color: #4169e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+  font-weight: 5px bold;
+}
+.SignUp {
+  padding: 1em;
+  border-radius: 3em;
+  background-color: #4169e1;
+}
+
+.SignUp form h1{
+    padding-bottom: -6em;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: Arial;
+    font-weight: lighter;
+}
+.SignUp form input{
+    /* padding-top: 1.5em; */
+    border: none;
+    border-bottom: 0.6px solid white;
+    outline: none;
+    width: 22em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4169e1;
+    color: white;
+    font-size: 14px;
+}
+.SignUp form input::placeholder{
+    color: white;
+}
+.SignUp form button{
+    width: 22em;
+    border-radius: 3em;
+    padding: 10px 0 10px 0;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    color: #4169e1;
+    cursor: pointer;
+    line-height: 2em;
+    font-weight: 100px;
+}
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .login{
+        margin-bottom: 2em;
+    }
+}
